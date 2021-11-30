@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+</head>
+<body>
+    <h1>Cadastro de Currículo</h1>
+    <form action="" method="GET">
+        <label for="nome-completo">Nome Completo:
+            <input type='text' name="nome" id="nome-completo" placeholder=
+            "Digite seu nome" required>
+        </label>
+        <br>
+        <label for="input-email">E-mail:
+            <input type="email" name="email" id="input-email" placeholder=
+            "Digite seu e-mail" required>
+        </label>
+        <br>
+        <label for="input-cpf">E-mail:
+            <input type="number" name="cpf" id="input-cpf" placeholder=
+            "Digite seu CPF" required>
+        </label>
+        <br>
+        <label for="input-endereco">Endereço:
+            <input type="text" name="endereco" id="input-endereco" placeholder=
+            "Digite seu Endereço" required>
+        </label>
+        <br>
+        <label for="input-cidade">Endereço:
+            <input type="text" name="cidade" id="input-cidade" placeholder=
+            "Digite sua Cidade" required>
+        </label>
+        <br>
+        <label for="input-email">Estado onde voce mora:
+            <select name="estado" id="input-estado">
+                <option value="sp">São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="es">Espirito Santo</option>
+            </select>
+        </label>
+        <br>
+        <label for="casa">
+            <input type="radio" name="casa-apartemento" id="casa" value="casa" required>Casa
+        </label>
+        <br>
+        <label for="apartamento">
+            <input type="radio" name="casa-apartemento" id="apartamento" value="apartamento" required>Apartamento
+        </label>
+        <p>Resumo do Curriculo</p>
+        <textarea name="resumo" id="resumo" cols="30" rows="5" required></textarea>
+        <br>
+        <label for="cargo">
+            <input type="text" name="cargo" id="cargo" placeholder="Digite seu Cargo" required>Cargo
+        </label>
+        <br>
+        <label for="descricao-cargo">
+            <input type="text" name="descricao-cargo" id="descricao-cargo" placeholder="Digite a descrição do Cargo" required>Descrição do Cargo:
+        </label>
+
+
+
+        
+<button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
