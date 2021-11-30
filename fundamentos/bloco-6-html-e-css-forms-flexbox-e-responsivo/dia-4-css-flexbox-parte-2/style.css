@@ -12,11 +12,13 @@
   .header-container {
     background-color: #5C687C;
     display: flex;
+    justify-content: space-between;
   }
   
   .logo-container {
     display: flex;
     justify-content: left;
+    padding-left: 30px;
     flex-basis: 500px;
     order: 0;
     flex-grow: 0;
@@ -33,7 +35,7 @@
   
   .menu-container ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     align-self: center;
   }
@@ -43,6 +45,58 @@
     font-weight: 500;
     font-size: 1.3rem;
     list-style: none;
-    margin-right: 10px;
+    margin-right: 60px;
     align-self: flex-start;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .movie-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 700px;
+  }
+  
+  .movie-container h2 {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card-container div {
+    align-items: center;
+    background-color: #5C687C;
+    border: black solid 1px;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    margin: 10px;
+    flex-basis: 16%;
+  }
+  
+  .aside-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex-basis: 350 px;
+  }
+  
+  .aside-container h3, h4 {
+    margin-bottom: 10px;
+    text-align: center;
+    flex-basis: 350 px;
+  }
+  
+  .aside-container p {
+    margin: 10px 0;
+    text-align: justify;
+    flex-basis: 350 px;
   }
