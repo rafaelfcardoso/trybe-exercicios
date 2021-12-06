@@ -1,0 +1,31 @@
+body {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h1 {
+    font-size: smaller;
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+figure {
+    margin: 0;
+}
