@@ -237,7 +237,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 34-1: _[Projeto - Trybeer V2]()_
 
-## CiÃªncia da Computação :hourglass_flowing_sand:
+## Ciência da Computação :hourglass_flowing_sand:
 
 ##### Bloco 35: Introdução - Ciência da Computação
 
@@ -249,7 +249,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 36: Python
 
 - [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e ExceÃ§Ãµes_
+- [ ] 35-2: _Testes e Exceções_
 - [ ] 35-3: _Entrada e Saída de dados_
 - [ ] 36-4: _Entrada e Saída de dados_
 - [ ] 35-5: _[Projeto - Tech news]()_
