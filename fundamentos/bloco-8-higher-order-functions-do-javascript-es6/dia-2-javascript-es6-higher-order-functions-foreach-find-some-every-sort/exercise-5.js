@@ -1,3 +1,5 @@
+//5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+
 const books = [
   {
     id: 1,
@@ -62,3 +64,9 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  return books.every((book) => book.author.birthYear > 1900 && book.author.birthYear <= 2000);
+};
