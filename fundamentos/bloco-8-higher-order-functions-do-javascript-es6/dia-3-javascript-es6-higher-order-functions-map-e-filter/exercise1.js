@@ -78,5 +78,5 @@ function formatedBookNames(books) {
     return livros = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
 
 };
-  /* 
-console.log(formatedBookNames(books)); */
+  
+console.log(formatedBookNames(books));
