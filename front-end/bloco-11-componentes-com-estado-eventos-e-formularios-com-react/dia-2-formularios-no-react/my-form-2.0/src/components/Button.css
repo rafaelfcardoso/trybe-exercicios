@@ -1,0 +1,14 @@
+button {
+  width: 100px;
+  padding: 5px;
+  font-weight: 700;
+  color: white;
+}
+
+.btn-reset-form {
+  background-color: red;
+}
+
+.btn-button-form {
+  background-color: green;
+}

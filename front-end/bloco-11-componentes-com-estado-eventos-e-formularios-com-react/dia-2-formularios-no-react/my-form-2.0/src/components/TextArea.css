@@ -1,0 +1,14 @@
+.textarea-label-form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+  color: gray;
+  font-weight: 700;
+}
+
+.textarea-form {
+  margin-top: 5px;
+  height: 100px;
+  resize: none;
+  color: black;
+}
