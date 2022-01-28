@@ -1,0 +1,15 @@
+.input-label-form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+  color: gray;
+  font-weight: 700;
+}
+
+.radio-label-form {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: gray;
+  font-weight: normal;
+}

@@ -1,0 +1,18 @@
+.input-label-form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 15px;
+  color: gray;
+  font-weight: 700;
+}
+
+.input-form {
+  margin-top: 5px;
+  width: 300px;
+  color: black;
+}
+
+.error {
+  color: red;
+  text-transform: uppercase;
+}

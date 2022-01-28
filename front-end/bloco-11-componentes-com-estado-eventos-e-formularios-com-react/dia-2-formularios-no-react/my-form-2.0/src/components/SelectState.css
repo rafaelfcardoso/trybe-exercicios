@@ -1,0 +1,13 @@
+.select-label-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: gray;
+  font-weight: 700;
+}
+
+.select-form {
+  margin-top: 5px;
+  color: black;
+  max-width: fit-content;
+}
