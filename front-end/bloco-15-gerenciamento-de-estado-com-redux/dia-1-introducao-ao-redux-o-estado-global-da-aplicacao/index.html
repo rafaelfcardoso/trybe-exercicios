@@ -40,6 +40,7 @@
     const previousButton = getByID("previous");
     const randomButton = getByID("random");
     const value = getByID("value");
+    const background = getByID('container')
 
     const ESTADO_INICIAL = {
       colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
@@ -91,9 +92,11 @@
     randomButton.addEventListener("click", () => {
       store.dispatch({ type: "RANDOM_COLOR" });
     });
+
     store.subscribe(() => {
       const { colors, index } = store.getState();
       value.innerText = colors[index];
+      background.style.backgroundColor = colors[index];
     });
 
     </script>
