@@ -1,6 +1,42 @@
 // service/CepService.js
 
-/* ... */
+const create = async (cep) => {
+  // testamos o REGEX de nosso CEP
+  const CEP_REGEX = /\d{5}-?\d{3}/;
+  if (!CEP_REGEX.test(cep)) {
+    return {
+      error: {
+        code: 'invalidData',
+        message: 'CEP inválido',
+      },
+    };
+  }
+
+  // Verificamos se o CEP já foi cadastrado. Aqui, podemos usar a mesma função que tínhamos antes.
+  const existingCep = await Cep.findAddressByCep(cep);
+  if (existingCep) {
+    return {
+      error: {
+        code: 'alreadyExists',
+        message: 'CEP já existente',
+      },
+    };
+  }
+
+  const createdCep = await Model.create(cep);
+
+  // Caso recebamos null, é porque o CEP não foi encontrado pela API
+ if (!createdCep) {
+    return {
+      error: {
+        code: 'notFound',
+        message: 'CEP não existe',
+      },
+    };
+  }
+  
+  return createdCep;
+};
 
 const findAddressByCep = async (searchedCep) => {
   // Começamos buscando o CEP no banco de dados
@@ -32,4 +68,4 @@ const findAddressByCep = async (searchedCep) => {
   return Cep.create(cepFromApi);
 };
 
-/* ... */
+module.exports = create;
