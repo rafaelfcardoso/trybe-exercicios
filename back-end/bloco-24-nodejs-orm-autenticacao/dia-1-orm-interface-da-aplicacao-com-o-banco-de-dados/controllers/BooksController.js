@@ -1,7 +1,18 @@
 const BookService = require('../services/BookService');
 
+// Refatore o método getAll de forma que ser for enviado uma query string author
+// ele seja capaz de pegar a lista usando o método getByAuthor de BooksService.
 const getAll = async (req, res) => {
-  const books = await BookService.getAll();
+  const { author } = req.query;
+
+  let books; 
+
+  if (author) {
+    books = await BookService.getByAuthor(author);
+  } else {
+    books = await BookService.getAll();
+  }
+
   res.status(200).json(books);
 };
 
