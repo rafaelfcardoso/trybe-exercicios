@@ -15,3 +15,5 @@ app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}!`));
 app.post('/books', BooksController.create);
 
 app.put('/books/:id', BooksController.update);
+
+app.delete('/books/:id', BooksController.remove);
