@@ -22,17 +22,19 @@ describe('Lens Model', () => {
       expect(newLens).to.be.deep.equal(lensMockWithId);
     })
 
-    it('successfully found', async () => {
-      const newLens = await lensModel.readOne('62cf1fc6498565d94eba52cd');
-      expect(newLens).to.be.deep.equal(lensMockWithId);
-    })
-
-    it('_id not found', async () => {
-      try {
-        await lensModel.readOne('123ERRADO');
-      } catch (error: any) {
-        expect(error.message).to.be.eq('InvalidMongoId');
-      }
+    describe('searching a lens', () => {
+      it('successfully found', async () => {
+        const lensFound = await lensModel.readOne('62cf1fc6498565d94eba52cd');
+        expect(lensFound).to.be.deep.equal(lensMockWithId);
+      });
+    
+      it('_id not found', async () => {
+        try {
+          await lensModel.readOne('123ERRADO');
+        } catch (error: any) {
+          expect(error.message).to.be.eq('InvalidMongoId');
+        }
+      });
     });
   })
 })
