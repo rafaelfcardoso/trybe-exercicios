@@ -1,6 +1,6 @@
 // ./src/tests/mocks/frameMock.ts
 
-import IFrame from '../../interfaces/Frame';
+import IFrame from '../../../interfaces/Frame';
 
 const frameMock:IFrame = {
   material: 'Ouro',
